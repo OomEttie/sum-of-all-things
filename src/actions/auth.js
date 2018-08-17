@@ -1,4 +1,4 @@
-import { firebase, googleAuthProvider } from '../firebase/firebase';
+import { firebase, googleAuthProvider } from '../utils/firebase';
 
 export const login = (uid) => ({
   type: 'LOGIN',

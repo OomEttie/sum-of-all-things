@@ -2,21 +2,12 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { Router, Route, Switch, Link, NavLink } from 'react-router-dom';
 import createHistory from 'history/createBrowserHistory';
-import DashboardPage from '../components/DashboardPage';
-import NotFoundPage from '../components/NotFoundPage';
-import LoginPage from '../components/LoginPage';
 import PrivateRoute from './PrivateRoute';
 import PublicRoute from './PublicRoute';
 
-//**DRAWER IMPORT */
-import PropTypes from 'prop-types';
-import { withStyles } from '@material-ui/core/styles';
-import SwipeableDrawer from '@material-ui/core/SwipeableDrawer';
-import Button from '@material-ui/core/Button';
-import List from '@material-ui/core/List';
-import Divider from '@material-ui/core/Divider';
-
-//** */
+import DashboardPage from '../dashboard/DashboardPage';
+import NotFoundPage from '../notfound/NotFoundPage';
+import LoginPage from '../login/LoginPage';
 
 export const history = createHistory();
 

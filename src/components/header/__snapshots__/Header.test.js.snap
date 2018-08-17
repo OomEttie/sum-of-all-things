@@ -1,0 +1,59 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render Header correctly 1`] = `
+<div
+  className="header"
+>
+  <div
+    className="content-container"
+  >
+    <div
+      className="header__content"
+    >
+      <Link
+        className="header__title"
+        replace={false}
+        to="/dashboard"
+      >
+        <h1>
+          Sum of All things
+        </h1>
+      </Link>
+      <button
+        className="button button--link"
+        onClick={[Function]}
+      >
+        Logout
+      </button>
+    </div>
+    <div
+      className="header__navigation"
+    >
+      <WithStyles(Button)
+        color="primary"
+        variant="contained"
+      >
+        Photography
+      </WithStyles(Button)>
+      <WithStyles(Button)
+        color="primary"
+        variant="contained"
+      >
+        Pilates
+      </WithStyles(Button)>
+      <WithStyles(Button)
+        color="primary"
+        variant="contained"
+      >
+        Customers
+      </WithStyles(Button)>
+      <WithStyles(Button)
+        color="primary"
+        variant="contained"
+      >
+        Calender
+      </WithStyles(Button)>
+    </div>
+  </div>
+</div>
+`;
