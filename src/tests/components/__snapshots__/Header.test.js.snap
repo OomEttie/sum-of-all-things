@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`should render Header correctly 1`] = `
-<header
+<div
   className="header"
 >
   <div
@@ -16,7 +16,7 @@ exports[`should render Header correctly 1`] = `
         to="/dashboard"
       >
         <h1>
-          Boilerplate
+          Sum of All things
         </h1>
       </Link>
       <button
@@ -27,5 +27,5 @@ exports[`should render Header correctly 1`] = `
       </button>
     </div>
   </div>
-</header>
+</div>
 `;

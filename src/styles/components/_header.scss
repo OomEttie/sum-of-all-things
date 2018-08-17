@@ -16,3 +16,12 @@
     margin: 0;
   }
 }
+
+.header__navigation {
+  display: flex;
+  justify-content: left;
+  button {
+    margin-right: 5px;
+    margin-bottom: 5px;
+  }
+};
