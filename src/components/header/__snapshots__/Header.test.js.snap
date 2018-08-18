@@ -29,30 +29,18 @@ exports[`should render Header correctly 1`] = `
     <div
       className="header__navigation"
     >
-      <WithStyles(Button)
-        color="primary"
-        variant="contained"
+      <div
+        className="button-material-primary"
       >
-        Photography
-      </WithStyles(Button)>
-      <WithStyles(Button)
-        color="primary"
-        variant="contained"
-      >
-        Pilates
-      </WithStyles(Button)>
-      <WithStyles(Button)
-        color="primary"
-        variant="contained"
-      >
-        Customers
-      </WithStyles(Button)>
-      <WithStyles(Button)
-        color="primary"
-        variant="contained"
-      >
-        Calender
-      </WithStyles(Button)>
+        <WithStyles(Button)
+          color="primary"
+          component={[Function]}
+          to="/clients"
+          variant="contained"
+        >
+          Clients
+        </WithStyles(Button)>
+      </div>
     </div>
   </div>
 </div>

@@ -1,0 +1,79 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render client list component correctly 1`] = `
+<div
+  className="content-container"
+>
+  <div
+    className="list-header"
+  >
+    <div
+      className="show-for-mobile"
+    >
+      Clients MOB
+    </div>
+    <div
+      className="show-for-desktop"
+    >
+      Clients
+    </div>
+  </div>
+  <div
+    className="list-body"
+  >
+    <div
+      className="list-item list-item--message"
+    >
+      <span>
+        No Clients
+      </span>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`render client list component with data 1`] = `
+<div
+  className="content-container"
+>
+  <div
+    className="list-header"
+  >
+    <div
+      className="show-for-mobile"
+    >
+      Clients MOB
+    </div>
+    <div
+      className="show-for-desktop"
+    >
+      Clients
+    </div>
+  </div>
+  <div
+    className="list-body"
+  >
+    <ClientListItem
+      id="1"
+      key="1"
+      name="1 name"
+      note="1 note"
+      surname="1 surname"
+    />
+    <ClientListItem
+      id="2"
+      key="2"
+      name="2 name"
+      note="2 note"
+      surname="2 surname"
+    />
+    <ClientListItem
+      id="3"
+      key="3"
+      name="3 name"
+      note="3 note"
+      surname="3 surname"
+    />
+  </div>
+</div>
+`;

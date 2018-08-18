@@ -14,4 +14,14 @@ firebase.initializeApp(config);
 const database = firebase.database();
 const googleAuthProvider = new firebase.auth.GoogleAuthProvider();
 
-export { firebase, googleAuthProvider, database as default };
+const clientsDatabaseRef = uid => {
+  return uid + '/clients';
+};
+
+export {
+  config,
+  firebase,
+  googleAuthProvider,
+  clientsDatabaseRef,
+  database as default
+};

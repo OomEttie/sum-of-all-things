@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
-import { startLogout } from '../../actions/auth'
+import { startLogout } from '../../actions/auth';
 import Button from '@material-ui/core/Button';
 
 export class Header extends React.Component {
@@ -21,18 +21,16 @@ export class Header extends React.Component {
             </button>
           </div>
           <div className="header__navigation">
-            <Button variant="contained" color="primary">
-              Photography
-            </Button>
-            <Button variant="contained" color="primary">
-              Pilates
-            </Button>
-            <Button variant="contained" color="primary">
-              Customers
-            </Button>
-            <Button variant="contained" color="primary">
-              Calender
-            </Button>
+            <div className="button-material-primary">
+              <Button
+                component={Link}
+                to="/clients"
+                variant="contained"
+                color="primary"
+              >
+                Clients
+              </Button>
+            </div>
           </div>
         </div>
       </div>

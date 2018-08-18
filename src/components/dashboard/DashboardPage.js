@@ -1,7 +1,16 @@
 import React from 'react';
+import { connect } from 'react-redux';
 
-const DashboardPage = () => (
-  <div className="content-container"> This is the dashboard</div>
-);
+export class DashboardPage extends React.Component {
+  render() {
+    return <div className="content-container"> This is the dashboard</div>;
+  }
+}
 
-export default DashboardPage;
+const mapStateToProps = state => {
+  return {
+    clients: state.clients
+  };
+};
+
+export default connect(mapStateToProps)(DashboardPage);

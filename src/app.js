@@ -10,6 +10,7 @@ import AppRouter, { history } from './components/routers/AppRouter';
 import LoadingPage from './components/loading/LoadingPage';
 
 import { login, logout } from './actions/auth'
+import { startListClients} from './actions/clients';
 
 const store = configureStore();
 const jsx = (
@@ -30,10 +31,13 @@ ReactDOM.render(<LoadingPage />, document.getElementById('app'));
 firebase.auth().onAuthStateChanged((user) => {
   if (user) {
     store.dispatch(login(user.uid));
-    renderApp();
-    if (history.location.pathname === '/') {
-      history.push('/dashboard');
-    }
+    store.dispatch(startListClients()).then(() => {
+      renderApp();
+      if (history.location.pathname == '/') {
+        history.push('/dashboard');
+      }
+      console.log();
+    });
   } else {
     store.dispatch(logout());
     renderApp();

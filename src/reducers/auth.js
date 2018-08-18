@@ -5,7 +5,6 @@ export default (state = {}, action) => {
         uid: action.uid
       };
     case 'LOGOUT':
-      console.log('LOGOUT');
       return {};
     default:
       return state;
