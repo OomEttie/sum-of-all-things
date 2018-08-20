@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { startLogout } from '../../actions/auth';
-import Button from '@material-ui/core/Button';
 
 export class Header extends React.Component {
   render() {
@@ -22,14 +21,9 @@ export class Header extends React.Component {
           </div>
           <div className="header__navigation">
             <div className="button-material-primary">
-              <Button
-                component={Link}
-                to="/clients"
-                variant="contained"
-                color="primary"
-              >
+              <Link className="button button--link" to="/clients">
                 Clients
-              </Button>
+              </Link>
             </div>
           </div>
         </div>

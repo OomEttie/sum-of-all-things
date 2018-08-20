@@ -2,7 +2,7 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import moment from 'moment';
 
-import ClientForm from './ClientForm';
+import { ClientForm } from './ClientForm';
 import { clients } from '../../utils/__mocks__/clients';
 
 test('render client form correctly', () => {

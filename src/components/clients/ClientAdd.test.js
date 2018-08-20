@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import { ClientAdd } from './ClientAdd'
+import { ClientAdd } from './ClientAdd';
 import { clients } from '../../utils/__mocks__/clients';
 
 let addClient, history, wrapper;
@@ -17,7 +17,7 @@ test('render add Client page correctly', () => {
 });
 
 test('handle add Client onSubmit event', () => {
-  wrapper.find('ClientForm').prop('onSubmit')(clients[1]);
+  wrapper.find('Connect(ClientForm)').prop('onSubmit')(clients[1]);
 
   expect(history.push).toHaveBeenLastCalledWith('/clients');
   expect(addClient).toHaveBeenLastCalledWith(clients[1]);

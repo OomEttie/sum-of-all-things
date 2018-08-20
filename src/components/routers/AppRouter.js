@@ -11,6 +11,7 @@ import ClientDashboard from '../clients/ClientDashboard';
 import NotFoundPage from '../notfound/NotFoundPage';
 import LoginPage from '../login/LoginPage';
 import ClientAdd from '../clients/ClientAdd';
+import ClientEdit from '../clients/ClientEdit';
 
 export const history = createHistory();
 
@@ -28,6 +29,7 @@ export class AppRouter extends React.Component {
               exact={true}
             />
             <PrivateRoute path="/clients/add" component={ClientAdd} exact={true}/>
+            <PrivateRoute path="/clients/edit/:id" component={ClientEdit}/>
             <Route component={NotFoundPage} />
           </Switch>
         </div>

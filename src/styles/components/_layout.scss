@@ -1,4 +1,13 @@
 //*************
+// content
+//*************
+.content-container {
+  margin: 0 auto;
+  padding: 0 $m-size;
+  max-width: 80rem;
+}
+
+//*************
 // box
 //*************
 .box-layout {
@@ -22,15 +31,6 @@
 .box-layout__title {
   margin: 0 0 $m-size 0;
   line-height: 1;
-}
-
-//*************
-// content
-//*************
-.content-container {
-  margin: 0 auto;
-  padding: 0 $m-size;
-  max-width: 80rem;
 }
 
 //*************

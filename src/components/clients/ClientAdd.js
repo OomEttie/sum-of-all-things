@@ -19,7 +19,7 @@ export class ClientAdd extends React.Component {
           </div>
         </div>
         <div className="content-container">
-          <ClientForm onSubmit={this.onSubmit} />
+          <ClientForm onSubmit={this.onSubmit}/>
         </div>
       </div>
     );

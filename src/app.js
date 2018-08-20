@@ -36,7 +36,6 @@ firebase.auth().onAuthStateChanged((user) => {
       if (history.location.pathname == '/') {
         history.push('/dashboard');
       }
-      console.log();
     });
   } else {
     store.dispatch(logout());

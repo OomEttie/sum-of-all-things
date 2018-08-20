@@ -32,14 +32,13 @@ exports[`should render Header correctly 1`] = `
       <div
         className="button-material-primary"
       >
-        <WithStyles(Button)
-          color="primary"
-          component={[Function]}
+        <Link
+          className="button button--link"
+          replace={false}
           to="/clients"
-          variant="contained"
         >
           Clients
-        </WithStyles(Button)>
+        </Link>
       </div>
     </div>
   </div>

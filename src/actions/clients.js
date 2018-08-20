@@ -40,56 +40,58 @@ export const startAddClient = (clientData = {}) => {
   };
 };
 
-// //
-// // REMOVE_EXPENSE
-// //
-// export const removeExpense = ({ id } = {}) => ({
-//   type: 'REMOVE_EXPENSE',
-//   id: id
-// });
+//
+// REMOVE_EXPENSE
+//
+export const removeClient = ({ id } = {}) => ({
+  type: ACTION_CLIENT_REMOVE,
+  id: id
+});
 
-// export const startRemoveExpense = ({ id }) => {
-//   return (dispatch, getState) => {
-//     const dbPath = expensesRef(
-//       getState().auth ? getState().auth.uid : 'UID_unknown'
-//     );
-//     return database
-//       .ref(`${dbPath}/${id}`)
-//       .remove()
-//       .then(data => {
-//         dispatch(removeExpense({ id }));
-//       });
-//   };
-// };
+export const startRemoveClient = ({ id }) => {
+  return (dispatch, getState) => {
+    const dbPath = clientsDatabaseRef(
+      getState().auth ? getState().auth.uid : 'UID_unknown'
+    );
 
-// //
-// // EDIT_EXPENSE
-// //
-// export const editExpense = (id, updates) => ({
-//   type: 'EDIT_EXPENSE',
-//   id,
-//   updates
-// });
+    return database
+      .ref(`${dbPath}/${id}`)
+      .remove()
+      .then(data => {
+        dispatch(removeClient({ id }));
+      });
+  };
+};
 
-// export const startEditExpense = (id, updates) => {
-//   return (dispatch, getState) => {
-//     const dbPath = expensesRef(
-//       getState().auth ? getState().auth.uid : 'UID_unknown'
-//     );
-//     return database
-//       .ref(`${dbPath}/${id}`)
-//       .update({
-//         ...updates
-//       })
-//       .then(() => {
-//         dispatch(editExpense(id, updates));
-//       });
-//   };
-// };
+//
+// EDIT_CLIENT
+//
+export const editClient = (id, updates) => ({
+  type: ACTION_CLIENT_EDIT,
+  id,
+  updates
+});
+
+export const startEditClient = (id, updates) => {
+  return (dispatch, getState) => {
+    let dbPath = clientsDatabaseRef(
+      getState().auth ? getState().auth.uid : 'UID_unknown'
+    );
+
+    return database
+      .ref(`${dbPath}/${id}`)
+      .update({
+        ...updates
+      })
+      .then(() => {
+        dispatch(editClient(id, updates));
+      });
+  };
+};
 
 //
 // LIST CLIENTS
-// 
+//
 export const listClients = clients => ({
   type: ACTION_CLIENT_LIST,
   clients
@@ -104,14 +106,14 @@ export const startListClients = () => {
       .ref(dbPath)
       .once('value')
       .then(snapshot => {
-        const clients = [];
+        const clientsData = [];
         snapshot.forEach(snapshotChild => {
-          clients.push({
+          clientsData.push({
             id: snapshotChild.key,
             ...snapshotChild.val()
           });
         });
-        dispatch(listClients(clients));
+        dispatch(listClients(clientsData));
       })
       .catch(e => {});
   };

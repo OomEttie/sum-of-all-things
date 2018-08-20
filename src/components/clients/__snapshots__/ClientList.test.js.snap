@@ -8,15 +8,26 @@ exports[`render client list component correctly 1`] = `
     className="list-header"
   >
     <div
-      className="show-for-mobile"
+      className="header__content"
     >
-      Clients MOB
+      <div
+        className="show-for-mobile"
+      >
+        Clients MOB
+      </div>
+      <div
+        className="show-for-desktop"
+      >
+        Clients
+      </div>
     </div>
-    <div
-      className="show-for-desktop"
+    <Link
+      className="button "
+      replace={false}
+      to="/clients/add"
     >
-      Clients
-    </div>
+      Add Client
+    </Link>
   </div>
   <div
     className="list-body"
@@ -40,15 +51,26 @@ exports[`render client list component with data 1`] = `
     className="list-header"
   >
     <div
-      className="show-for-mobile"
+      className="header__content"
     >
-      Clients MOB
+      <div
+        className="show-for-mobile"
+      >
+        Clients MOB
+      </div>
+      <div
+        className="show-for-desktop"
+      >
+        Clients
+      </div>
     </div>
-    <div
-      className="show-for-desktop"
+    <Link
+      className="button "
+      replace={false}
+      to="/clients/add"
     >
-      Clients
-    </div>
+      Add Client
+    </Link>
   </div>
   <div
     className="list-body"

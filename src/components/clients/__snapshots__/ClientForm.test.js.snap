@@ -1,117 +1,122 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`render client form correctly 1`] = `
-<form
-  className="form"
-  onSubmit={[Function]}
->
-  <input
-    autoFocus={true}
-    className="text-input"
-    onChange={[Function]}
-    placeholder="Name"
-    type="text"
-    value=""
-  />
-  <input
-    className="text-input"
-    onChange={[Function]}
-    placeholder="Surname"
-    type="text"
-    value=""
-  />
-  <textarea
-    className="textarea"
-    onChange={[Function]}
-    placeholder="Add a note (optional)"
-    value=""
-  />
-  <div>
-    <button
-      className="button"
-    >
-      Add
-       Client
-    </button>
-  </div>
-</form>
+<div>
+  <form
+    className="form"
+    onSubmit={[Function]}
+  >
+    <input
+      autoFocus={true}
+      className="text-input"
+      onChange={[Function]}
+      placeholder="Name"
+      type="text"
+      value=""
+    />
+    <input
+      className="text-input"
+      onChange={[Function]}
+      placeholder="Surname"
+      type="text"
+      value=""
+    />
+    <textarea
+      className="textarea"
+      onChange={[Function]}
+      placeholder="Add a note (optional)"
+      value=""
+    />
+    <div>
+      <button>
+        Add
+         Client
+      </button>
+    </div>
+  </form>
+</div>
 `;
 
 exports[`render client form with data 1`] = `
-<form
-  className="form"
-  onSubmit={[Function]}
->
-  <input
-    autoFocus={true}
-    className="text-input"
-    onChange={[Function]}
-    placeholder="Name"
-    type="text"
-    value="2 name"
-  />
-  <input
-    className="text-input"
-    onChange={[Function]}
-    placeholder="Surname"
-    type="text"
-    value="2 surname"
-  />
-  <textarea
-    className="textarea"
-    onChange={[Function]}
-    placeholder="Add a note (optional)"
-    value="2 note"
-  />
-  <div>
-    <button
-      className="button"
-    >
-      Save
-       Client
-    </button>
-  </div>
-</form>
+<div>
+  <form
+    className="form"
+    onSubmit={[Function]}
+  >
+    <input
+      autoFocus={true}
+      className="text-input"
+      onChange={[Function]}
+      placeholder="Name"
+      type="text"
+      value="2 name"
+    />
+    <input
+      className="text-input"
+      onChange={[Function]}
+      placeholder="Surname"
+      type="text"
+      value="2 surname"
+    />
+    <textarea
+      className="textarea"
+      onChange={[Function]}
+      placeholder="Add a note (optional)"
+      value="2 note"
+    />
+    <div>
+      <button>
+        Save
+         Client
+      </button>
+    </div>
+  </form>
+  <button
+    onClick={[Function]}
+  >
+    Remove Client
+  </button>
+</div>
 `;
 
 exports[`render client form with invalid data 1`] = `
-<form
-  className="form"
-  onSubmit={[Function]}
->
-  <p
-    className="form__error"
+<div>
+  <form
+    className="form"
+    onSubmit={[Function]}
   >
-    Please provide name and surname!
-  </p>
-  <input
-    autoFocus={true}
-    className="text-input"
-    onChange={[Function]}
-    placeholder="Name"
-    type="text"
-    value=""
-  />
-  <input
-    className="text-input"
-    onChange={[Function]}
-    placeholder="Surname"
-    type="text"
-    value=""
-  />
-  <textarea
-    className="textarea"
-    onChange={[Function]}
-    placeholder="Add a note (optional)"
-    value=""
-  />
-  <div>
-    <button
-      className="button"
+    <p
+      className="form__error"
     >
-      Add
-       Client
-    </button>
-  </div>
-</form>
+      Please provide name and surname!
+    </p>
+    <input
+      autoFocus={true}
+      className="text-input"
+      onChange={[Function]}
+      placeholder="Name"
+      type="text"
+      value=""
+    />
+    <input
+      className="text-input"
+      onChange={[Function]}
+      placeholder="Surname"
+      type="text"
+      value=""
+    />
+    <textarea
+      className="textarea"
+      onChange={[Function]}
+      placeholder="Add a note (optional)"
+      value=""
+    />
+    <div>
+      <button>
+        Add
+         Client
+      </button>
+    </div>
+  </form>
+</div>
 `;

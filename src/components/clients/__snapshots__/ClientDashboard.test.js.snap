@@ -4,19 +4,6 @@ exports[`should render ClientDashboard correctly 1`] = `
 <div
   className="content-container"
 >
-  <div
-    className="button-material-primary"
-  >
-    <WithStyles(Button)
-      aria-label="Add"
-      color="primary"
-      component={[Function]}
-      to="/clients/add"
-      variant="fab"
-    >
-      <pure(Add) />
-    </WithStyles(Button)>
-  </div>
   <ClientList
     clients={Array []}
   />
