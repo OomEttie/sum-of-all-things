@@ -2,9 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 
-import { ClientList } from './ClientList';
+import ScheduleList from './ScheduleList';
 
-export class ClientDashboard extends React.Component {
+export class ScheduleDashboard extends React.Component {
   constructor(props) {
     super(props);
   }
@@ -12,7 +12,7 @@ export class ClientDashboard extends React.Component {
   render() {
     return (
       <div className="content-container">
-        <ClientList clients={this.props.clients} />
+        <ScheduleList schedules={this.props.schedules} />
       </div>
     );
   }
@@ -20,10 +20,10 @@ export class ClientDashboard extends React.Component {
 
 const mapStateToProps = (state, props) => {
   return {
-    clients: state.clients
+    schedules: state.schedules
   };
 };
 
 const mapDispatchToProps = dispatch => {};
 
-export default connect(mapStateToProps)(ClientDashboard);
+export default connect(mapStateToProps)(ScheduleDashboard);

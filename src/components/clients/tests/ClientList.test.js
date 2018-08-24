@@ -2,8 +2,8 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import moment from 'moment';
 
-import ClientList from './ClientList';
-import { clients } from '../../utils/__mocks__/clients';
+import ClientList from '../ClientList';
+import { clients } from '../../../utils/__mocks__/clients';
 
 test('render client list component correctly', () => {
   const wrapper = shallow(<ClientList />);

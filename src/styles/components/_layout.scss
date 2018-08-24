@@ -21,7 +21,7 @@
 }
 
 .box-layout__box {
-  background: fade-out(white, .15);
+  background: fade-out(white, 0.15);
   border-radius: 3px;
   padding: $l-size $m-size;
   text-align: center;
@@ -78,7 +78,7 @@
 .form {
   display: flex;
   flex-direction: column;
-  >* {
+  > * {
     margin-bottom: $m-size;
   }
 }
@@ -86,4 +86,9 @@
 .form__error {
   // margin: 0 0 $m-size 0;
   font-style: italic;
+}
+
+.dashboard {
+  background-image: url('/images/dashboard/dashboard1.jpg');
+  background-size: cover;
 }

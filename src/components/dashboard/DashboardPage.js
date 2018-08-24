@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 
 export class DashboardPage extends React.Component {
   render() {
-    return <div className="content-container"> This is the dashboard</div>;
+    return <div className="content-container">This is the dashboard</div>;
   }
 }
 

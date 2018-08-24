@@ -4,6 +4,6 @@ exports[`should render DashboardPage correctly 1`] = `
 <div
   className="content-container"
 >
-   This is the dashboard
+  This is the dashboard
 </div>
 `;

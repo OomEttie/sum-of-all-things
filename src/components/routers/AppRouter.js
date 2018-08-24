@@ -7,11 +7,16 @@ import PublicRoute from './PublicRoute';
 import PropTypes from 'prop-types';
 
 import DashboardPage from '../dashboard/DashboardPage';
-import ClientDashboard from '../clients/ClientDashboard';
 import NotFoundPage from '../notfound/NotFoundPage';
 import LoginPage from '../login/LoginPage';
+
+import ClientDashboard from '../clients/ClientDashboard';
 import ClientAdd from '../clients/ClientAdd';
 import ClientEdit from '../clients/ClientEdit';
+
+import ScheduleDashboard from '../schedule/ScheduleDashboard';
+import ScheduleAdd from '../schedule/ScheduleAdd';
+import ScheduleEdit from '../schedule/ScheduleEdit';
 
 export const history = createHistory();
 
@@ -22,14 +27,33 @@ export class AppRouter extends React.Component {
         <div>
           <Switch>
             <PublicRoute path="/" component={LoginPage} exact={true} />
-            <PrivateRoute path="/dashboard" component={DashboardPage} exact={true}/>
+            <PrivateRoute
+              path="/dashboard"
+              component={DashboardPage}
+              exact={true}
+            />
             <PrivateRoute
               path="/clients"
               component={ClientDashboard}
               exact={true}
             />
-            <PrivateRoute path="/clients/add" component={ClientAdd} exact={true}/>
-            <PrivateRoute path="/clients/edit/:id" component={ClientEdit}/>
+            <PrivateRoute
+              path="/clients/add"
+              component={ClientAdd}
+              exact={true}
+            />
+            <PrivateRoute path="/clients/edit/:id" component={ClientEdit} />
+            <PrivateRoute
+              path="/schedule"
+              component={ScheduleDashboard}
+              exact={true}
+            />
+            <PrivateRoute
+              path="/schedule/add"
+              component={ScheduleAdd}
+              exact={true}
+            />
+            <PrivateRoute path="/schedule/edit/:id" component={ScheduleEdit} />
             <Route component={NotFoundPage} />
           </Switch>
         </div>

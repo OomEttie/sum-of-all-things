@@ -35,6 +35,13 @@ exports[`should render Header correctly 1`] = `
         <Link
           className="button button--link"
           replace={false}
+          to="/schedule"
+        >
+          Schedule
+        </Link>
+        <Link
+          className="button button--link"
+          replace={false}
           to="/clients"
         >
           Clients

@@ -17,11 +17,15 @@ const googleAuthProvider = new firebase.auth.GoogleAuthProvider();
 const clientsDatabaseRef = uid => {
   return uid + '/clients';
 };
+const schedulesDatabaseRef = uid => {
+  return uid + '/schedules';
+};
 
 export {
   config,
   firebase,
   googleAuthProvider,
   clientsDatabaseRef,
+  schedulesDatabaseRef,
   database as default
 };

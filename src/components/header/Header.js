@@ -21,6 +21,9 @@ export class Header extends React.Component {
           </div>
           <div className="header__navigation">
             <div className="button-material-primary">
+              <Link className="button button--link" to="/schedule">
+                Schedule
+              </Link>
               <Link className="button button--link" to="/clients">
                 Clients
               </Link>

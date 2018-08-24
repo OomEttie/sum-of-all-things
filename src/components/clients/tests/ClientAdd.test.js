@@ -1,7 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import { ClientAdd } from './ClientAdd';
-import { clients } from '../../utils/__mocks__/clients';
+import { ClientAdd } from '../ClientAdd';
+import { clients } from '../../../utils/__mocks__/clients';
 
 let addClient, history, wrapper;
 

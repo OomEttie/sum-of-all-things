@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render edit Client page correctly 1`] = `
+<div>
+  <div
+    className="page-header"
+  >
+    <div
+      className="content-container"
+    >
+      <h1
+        className="page-header__title"
+      >
+        Edit Client
+      </h1>
+    </div>
+  </div>
+  <div
+    className="content-container"
+  >
+    <Connect(ClientForm)
+      client={
+        Object {
+          "id": "2",
+          "name": "2 name",
+          "note": "2 note",
+          "surname": "2 surname",
+        }
+      }
+      onRemoveClient={[Function]}
+      onSubmit={[Function]}
+    />
+  </div>
+</div>
+`;

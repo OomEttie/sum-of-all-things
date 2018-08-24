@@ -24,6 +24,7 @@ export class ClientEdit extends React.Component {
         </div>
         <div className="content-container">
           <ClientForm
+            client={this.props.client}
             onSubmit={this.onSubmit}
             onRemoveClient={this.onRemoveClient}
           />

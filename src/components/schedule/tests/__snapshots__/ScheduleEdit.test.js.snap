@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render edit schedule page correctly 1`] = `
+<div>
+  <div
+    className="page-header"
+  >
+    <div
+      className="content-container"
+    >
+      <h1
+        className="page-header__title"
+      >
+        Edit Schedule
+      </h1>
+    </div>
+  </div>
+  <div
+    className="content-container"
+  >
+    <ScheduleForm
+      onRemoveSchedule={[Function]}
+      onSubmit={[Function]}
+      schedule={
+        Object {
+          "client": "client 2",
+          "description": "schedule 2",
+          "end": 1533117600,
+          "id": "2",
+          "note": "note 2",
+          "start": 1533117600,
+        }
+      }
+    />
+  </div>
+</div>
+`;

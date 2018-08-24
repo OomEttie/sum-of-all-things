@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`render edit Client page correctly 1`] = `
+exports[`render add schedule page correctly 1`] = `
 <div>
   <div
     className="page-header"
@@ -11,15 +11,14 @@ exports[`render edit Client page correctly 1`] = `
       <h1
         className="page-header__title"
       >
-        Edit Client
+        Add Schedule
       </h1>
     </div>
   </div>
   <div
     className="content-container"
   >
-    <Connect(ClientForm)
-      onRemoveClient={[Function]}
+    <ScheduleForm
       onSubmit={[Function]}
     />
   </div>
