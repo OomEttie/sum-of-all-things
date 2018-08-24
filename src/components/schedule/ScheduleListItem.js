@@ -18,7 +18,7 @@ export const ScheduleListItem = ({
           {description} {note}
         </h3>
         <span className="list-item__subtitle">
-          {moment.unix(start).format('MMM Do, YYYY')}
+          {moment(start).format('MMM Do, YYYY')}
         </span>
       </div>
     </Link>

@@ -13,11 +13,11 @@ export class ScheduleForm extends React.Component {
   constructor(props) {
     super(props);
 
-    const scheduleData = scheduleObject();
+    let scheduleData = scheduleObject();
     scheduleData.id = props.schedule ? props.schedule.id : '';
     scheduleData.description = props.schedule ? props.schedule.description : '';
-    scheduleData.start = props.schedule ? props.schedule.start : 0;
-    scheduleData.end = props.schedule ? props.schedule.end : 0;
+    scheduleData.start = props.schedule ? moment(props.schedule.start) : moment();
+    scheduleData.end = props.schedule ? moment(props.schedule.end) : moment();
     scheduleData.client = props.schedule ? props.schedule.client : '';
     scheduleData.note = props.schedule ? props.schedule.note : '';
 
@@ -78,8 +78,8 @@ export class ScheduleForm extends React.Component {
       }));
       this.props.onSubmit({
         description: this.state.description,
-        start: moment(this.state.start).unix(),
-        end: moment(this.state.end).unix(),
+        start: this.state.start.valueOf(),
+        end: this.state.end.valueOf(),
         client: this.state.client,
         note: this.state.note
       });
